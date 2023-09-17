@@ -1,0 +1,20 @@
+{
+"id": "TASK_clean_claim_data_task_dc3cf997-291d-4e01-88e7-c3dab7c045b3",
+"owner_id": "SCENARIO_claim_783e22bb-b1a7-44b7-8ef5-d36f0beba600",
+"parent_ids": [
+"PIPELINE_claim_pipeline_a5f04f5c-a94f-49e9-aabc-253ba3cfa06c"
+],
+"config_id": "clean_claim_data_task",
+"input_ids": [
+"DATANODE_initial_dataset_2ebce9a5-1970-4cd4-b160-6fa444fc0045",
+"DATANODE_new_person_b322b0b3-903f-434b-b448-d085d3af4b72"
+],
+"function_name": "clean_data_claim",
+"function_module": "functions_claim",
+"output_ids": [
+"DATANODE_cleaned_dataset_88decb42-601e-4e4d-be12-a1a94c077a71"
+],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb",
+"skippable": true,
+"properties": {}
+}

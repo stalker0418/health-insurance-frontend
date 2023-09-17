@@ -1,0 +1,17 @@
+{
+"id": "JOB_model_retraining_claim_task_d0200b72-2355-4781-a43e-3aff300e2125",
+"task_id": "TASK_model_retraining_claim_task_1894f498-97d0-46d9-ab38-8ffd2accf723",
+"status": "<Status.COMPLETED: 7>",
+"force": false,
+"submit_id": "SUBMISSION_c00e5772-65ac-4bab-acfa-e97bd37a4821",
+"creation_date": "2023-09-17T10:04:51.925915",
+"subscribers": [
+{
+"fct_name": "_Orchestrator._on_status_change",
+"fct_params": [],
+"fct_module": "taipy.core._orchestrator._orchestrator"
+}
+],
+"stacktrace": [],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb"
+}

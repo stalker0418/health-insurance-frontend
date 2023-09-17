@@ -1,0 +1,14 @@
+{
+"id": "SCENARIO_claim_783e22bb-b1a7-44b7-8ef5-d36f0beba600",
+"config_id": "claim",
+"pipelines": [
+"PIPELINE_claim_pipeline_a5f04f5c-a94f-49e9-aabc-253ba3cfa06c"
+],
+"properties": {},
+"creation_date": "2023-09-17T10:04:51.842590",
+"primary_scenario": false,
+"subscribers": [],
+"tags": [],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb",
+"cycle": null
+}

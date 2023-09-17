@@ -1,0 +1,67 @@
+[TAIPY]
+read_entity_retry = "3:int"
+
+[DATA_NODE.initial_dataset]
+storage_type = "csv"
+default_path = "df.csv"
+
+[DATA_NODE.new_person]
+default_data = [ "Procedure_Code", "Diagnosis_Code", "Provider_Specialty", "Patient_Age", "Insurance_Plan", "Deductible", "Copayment", "Coinsurance",]
+
+[DATA_NODE.cleaned_dataset]
+
+[DATA_NODE.model_output]
+
+[DATA_NODE.predictions]
+
+[TASK.clean_data_task]
+function = "functions.clean_data:function"
+inputs = [ "initial_dataset:SECTION",]
+outputs = [ "cleaned_dataset:SECTION",]
+skippable = "True:bool"
+
+[TASK.clean_claim_data_task]
+function = "functions_claim.clean_data_claim:function"
+inputs = [ "initial_dataset:SECTION", "new_person:SECTION",]
+outputs = [ "cleaned_dataset:SECTION",]
+skippable = "True:bool"
+
+[TASK.model_retraining_task]
+function = "functions.retrained_model:function"
+inputs = [ "cleaned_dataset:SECTION",]
+outputs = [ "model_output:SECTION",]
+skippable = "True:bool"
+
+[TASK.model_retraining_claim_task]
+function = "functions_claim.retrained_model_claim:function"
+inputs = [ "cleaned_dataset:SECTION",]
+outputs = [ "model_output:SECTION",]
+skippable = "True:bool"
+
+[TASK.predict_task]
+function = "functions.predict:function"
+inputs = [ "model_output:SECTION",]
+outputs = [ "predictions:SECTION",]
+skippable = "True:bool"
+
+[TASK.predict_claim_task]
+function = "functions_claim.predict_claim:function"
+inputs = [ "model_output:SECTION", "new_person:SECTION",]
+outputs = [ "predictions:SECTION",]
+skippable = "True:bool"
+
+[PIPELINE.stock_pipeline]
+tasks = [ "clean_data_task:SECTION", "model_retraining_task:SECTION", "predict_task:SECTION",]
+
+[PIPELINE.claim_pipeline]
+tasks = [ "clean_claim_data_task:SECTION", "model_retraining_claim_task:SECTION", "predict_claim_task:SECTION",]
+
+[SCENARIO.stock]
+pipelines = [ "stock_pipeline:SECTION",]
+
+[SCENARIO.claim]
+pipelines = [ "claim_pipeline:SECTION",]
+
+[SCENARIO.stock.comparators]
+
+[SCENARIO.claim.comparators]

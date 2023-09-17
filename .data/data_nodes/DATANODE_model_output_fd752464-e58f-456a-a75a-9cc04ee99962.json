@@ -1,0 +1,29 @@
+{
+"id": "DATANODE_model_output_fd752464-e58f-456a-a75a-9cc04ee99962",
+"config_id": "model_output",
+"scope": "<Scope.SCENARIO: 2>",
+"storage_type": "pickle",
+"name": null,
+"owner_id": "SCENARIO_claim_783e22bb-b1a7-44b7-8ef5-d36f0beba600",
+"parent_ids": [
+"TASK_model_retraining_claim_task_1894f498-97d0-46d9-ab38-8ffd2accf723",
+"TASK_predict_claim_task_5d6044ed-1db8-4ac1-b14d-5146127976d1"
+],
+"last_edit_date": "2023-09-17T10:04:52.422060",
+"edits": [
+{
+"job_id": "JOB_model_retraining_claim_task_d0200b72-2355-4781-a43e-3aff300e2125",
+"timestamp": {
+"__type__": "Datetime",
+"__value__": "2023-09-17T10:04:52.422060"
+}
+}
+],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"data_node_properties": {
+"is_generated": true
+}
+}

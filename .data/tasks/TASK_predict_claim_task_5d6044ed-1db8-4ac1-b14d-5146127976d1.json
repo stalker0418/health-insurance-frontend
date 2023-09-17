@@ -1,0 +1,20 @@
+{
+"id": "TASK_predict_claim_task_5d6044ed-1db8-4ac1-b14d-5146127976d1",
+"owner_id": "SCENARIO_claim_783e22bb-b1a7-44b7-8ef5-d36f0beba600",
+"parent_ids": [
+"PIPELINE_claim_pipeline_a5f04f5c-a94f-49e9-aabc-253ba3cfa06c"
+],
+"config_id": "predict_claim_task",
+"input_ids": [
+"DATANODE_model_output_fd752464-e58f-456a-a75a-9cc04ee99962",
+"DATANODE_new_person_b322b0b3-903f-434b-b448-d085d3af4b72"
+],
+"function_name": "predict_claim",
+"function_module": "functions_claim",
+"output_ids": [
+"DATANODE_predictions_1bfe4d5f-8953-4942-afe8-b7f0aff4e018"
+],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb",
+"skippable": true,
+"properties": {}
+}

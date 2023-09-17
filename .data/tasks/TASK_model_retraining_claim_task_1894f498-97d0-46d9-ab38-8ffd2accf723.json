@@ -1,0 +1,19 @@
+{
+"id": "TASK_model_retraining_claim_task_1894f498-97d0-46d9-ab38-8ffd2accf723",
+"owner_id": "SCENARIO_claim_783e22bb-b1a7-44b7-8ef5-d36f0beba600",
+"parent_ids": [
+"PIPELINE_claim_pipeline_a5f04f5c-a94f-49e9-aabc-253ba3cfa06c"
+],
+"config_id": "model_retraining_claim_task",
+"input_ids": [
+"DATANODE_cleaned_dataset_88decb42-601e-4e4d-be12-a1a94c077a71"
+],
+"function_name": "retrained_model_claim",
+"function_module": "functions_claim",
+"output_ids": [
+"DATANODE_model_output_fd752464-e58f-456a-a75a-9cc04ee99962"
+],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb",
+"skippable": true,
+"properties": {}
+}

@@ -1,0 +1,23 @@
+{
+"id": "DATANODE_initial_dataset_2ebce9a5-1970-4cd4-b160-6fa444fc0045",
+"config_id": "initial_dataset",
+"scope": "<Scope.SCENARIO: 2>",
+"storage_type": "csv",
+"name": null,
+"owner_id": "SCENARIO_claim_783e22bb-b1a7-44b7-8ef5-d36f0beba600",
+"parent_ids": [
+"TASK_clean_claim_data_task_dc3cf997-291d-4e01-88e7-c3dab7c045b3"
+],
+"last_edit_date": "2023-09-17T10:04:51.769048",
+"edits": [],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"data_node_properties": {
+"default_path": "df.csv",
+"has_header": true,
+"exposed_type": "pandas",
+"path": "healthcare_billing_dataset.csv"
+}
+}

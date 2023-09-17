@@ -1,0 +1,17 @@
+{
+"id": "JOB_clean_claim_data_task_8f173b0d-5d51-4513-af67-6e85fdbbd426",
+"task_id": "TASK_clean_claim_data_task_dc3cf997-291d-4e01-88e7-c3dab7c045b3",
+"status": "<Status.COMPLETED: 7>",
+"force": false,
+"submit_id": "SUBMISSION_c00e5772-65ac-4bab-acfa-e97bd37a4821",
+"creation_date": "2023-09-17T10:04:51.901686",
+"subscribers": [
+{
+"fct_name": "_Orchestrator._on_status_change",
+"fct_params": [],
+"fct_module": "taipy.core._orchestrator._orchestrator"
+}
+],
+"stacktrace": [],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb"
+}

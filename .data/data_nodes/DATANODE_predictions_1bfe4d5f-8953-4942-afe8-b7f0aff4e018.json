@@ -1,0 +1,28 @@
+{
+"id": "DATANODE_predictions_1bfe4d5f-8953-4942-afe8-b7f0aff4e018",
+"config_id": "predictions",
+"scope": "<Scope.SCENARIO: 2>",
+"storage_type": "pickle",
+"name": null,
+"owner_id": "SCENARIO_claim_783e22bb-b1a7-44b7-8ef5-d36f0beba600",
+"parent_ids": [
+"TASK_predict_claim_task_5d6044ed-1db8-4ac1-b14d-5146127976d1"
+],
+"last_edit_date": "2023-09-17T10:04:52.519685",
+"edits": [
+{
+"job_id": "JOB_predict_claim_task_28a45599-7e14-41d5-96e1-6c6bdff586b1",
+"timestamp": {
+"__type__": "Datetime",
+"__value__": "2023-09-17T10:04:52.519685"
+}
+}
+],
+"version": "646648fe-9540-4f96-9ea4-f085d3300aeb",
+"validity_days": null,
+"validity_seconds": null,
+"edit_in_progress": false,
+"data_node_properties": {
+"is_generated": true
+}
+}

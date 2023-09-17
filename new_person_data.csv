@@ -1,0 +1,2 @@
+Procedure_Code,Diagnosis_Code,Provider_Specialty,Patient_Age,Insurance_Plan,Deductible,Copayment,Coinsurance
+CPT456,ICD-10-B,Orthopedics,21,Medicare,7.468317744918851,3.407076530498077,0.4687588851926105
