@@ -1,4 +1,4 @@
-# health-insurance-frontend
+# Health-Insurance-WebApp-FrontEndComponents
 
 ### To access the Application, run the following command:
 
